@@ -149,3 +149,7 @@ table {
 .title {
   text-wrap: balance;
 }
+
+main {
+  scrollbar-width: none;
+}

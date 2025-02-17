@@ -32,7 +32,7 @@ export const Header = () => (
         <section>
             <Contacts />
         </section>
-        <section className="flex flex-row justify-evenly">
+        <section className="flex flex-col md:flex-row justify-evenly">
             {achievements.map((achievement) => (
                 <Achievement key={achievement.description} {...achievement} />
             ))}
