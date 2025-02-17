@@ -1,34 +1,34 @@
-import Link from "next/link";
-import type { Metadata } from "next";
-import { projects } from "./project-data";
+import type { Metadata } from "next"
+import { projects } from "./projectData"
+import { ProjectCard } from "app/projects/ProjectCard"
+import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: "Nextfolio Projects",
-};
+    title: "Projects",
+    description: "My projects",
+}
 
 export default function Projects() {
-  return (
-    <section>
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">Projects</h1>
-      <div>
-        {projects.map((project, index) => (
-          <Link
-            key={index}
-            href={project.url}
-            className="flex flex-col space-y-1 mb-5 transition-opacity duration-200 hover:opacity-80"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-1 sm:space-y-0 sm:space-x-2">
-              <h2 className="text-black dark:text-white">{project.title}</h2>
-              <p className="text-neutral-600 dark:text-neutral-400 tracking-tight">
-                {project.description}
-              </p>
+    return (
+        <section className='flex flex-col gap-4'>
+            <h1 className="mb-8 text-2xl font-medium tracking-tight">Projects</h1>
+            <div>
+                {projects.map((project) => (
+                    <ProjectCard
+                        images={project.images}
+                        key={project.title}
+                        title={project.title}
+                        description={project.description}
+                        url={project.url}
+                    />
+                ))}
             </div>
-          </Link>
-        ))}
-      </div>
-    </section>
-  );
+            <div className="flex flex-row whitespace-pre justify-center">
+                <span>More projects are available on my</span>&nbsp;
+                <Link href="https://github.com/thewhitehaven04" className="link link-neutral" target="_blank">
+                    Github
+                </Link>
+            </div>
+        </section>
+    )
 }
