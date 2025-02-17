@@ -26,12 +26,8 @@ const achievements: ComponentProps<typeof Achievement>[] = [
 
 export const Header = () => (
     <header className="flex flex-col gap-6">
-        <section>
-            <AboutMe {...aboutMe} />
-        </section>
-        <section>
-            <Contacts />
-        </section>
+        <AboutMe {...aboutMe} />
+        <Contacts />
         <section className="flex flex-col md:flex-row justify-evenly">
             {achievements.map((achievement) => (
                 <Achievement key={achievement.description} {...achievement} />

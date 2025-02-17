@@ -11,7 +11,7 @@ const navItems = {
 export const Navbar = () => {
     const pathname = usePathname()
     return (
-        <div role="tablist" className="tabs tabs-lg p-3 tabs-boxed">
+        <div role="tablist" className="tabs md:tabs-lg p-2 md:p-3 tabs-boxed">
             {Object.keys(navItems).map((item) => (
                 <Link
                     key={item}

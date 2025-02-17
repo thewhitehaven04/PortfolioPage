@@ -4,14 +4,14 @@ import { ProjectCard } from "app/projects/ProjectCard"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    title: "Projects",
-    description: "My projects",
+    title: "Portfolio",
+    description: "My portfolio",
 }
 
-export default function Projects() {
+export default function Portfolio() {
     return (
         <section className='flex flex-col gap-4 pt-4'>
-            <h1 className="mb-8 text-2xl font-medium tracking-tight">Projects</h1>
+            <h1 className="text-2xl font-medium tracking-tight">Projects</h1>
             <div>
                 {projects.map((project) => (
                     <ProjectCard
