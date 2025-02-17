@@ -2,6 +2,9 @@
 module.exports = {
     darkMode: "class",
     content: ["./app/**/*.{js,ts,jsx,tsx,mdx}", "./public/**/*.svg"],
+    daisyui: {
+        themes: ["bumblebee", "dark"],
+    },
     theme: {
         extend: {
             fontFamily: {
