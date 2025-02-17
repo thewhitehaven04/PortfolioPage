@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Projects() {
     return (
-        <section className='flex flex-col gap-4'>
+        <section className='flex flex-col gap-4 pt-4'>
             <h1 className="mb-8 text-2xl font-medium tracking-tight">Projects</h1>
             <div>
                 {projects.map((project) => (
@@ -20,6 +20,7 @@ export default function Projects() {
                         title={project.title}
                         description={project.description}
                         url={project.url}
+                        demoUrl={project.demoUrl}
                     />
                 ))}
             </div>

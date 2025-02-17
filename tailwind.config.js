@@ -6,6 +6,10 @@ module.exports = {
         themes: ["bumblebee", "dark"],
     },
     theme: {
+        colors: {
+            primary: "#4CAF50",
+            secondary: "#087F23",
+        },
         extend: {
             fontFamily: {
                 sans: ["var(--font-geist-sans)"],

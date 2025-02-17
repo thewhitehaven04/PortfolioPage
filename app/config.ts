@@ -11,4 +11,5 @@ export const socialLinks = {
     github: "https://github.com/thewhitehaven04",
     linkedin: "https://www.linkedin.com/in/german-bulavkin-866546340/",
     email: "mailto:thewhitehaven04@gmail.com",
+    telegram: "https://t.me/Northern_L1ghts"
 }

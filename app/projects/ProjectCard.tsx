@@ -28,13 +28,14 @@ export const ProjectCard = (props: {
             <div className="flex flex-row gap-1 justify-center">
                 {images.map((image, index) => (
                     <a key={image.id} href={`#${image.id}`}>
-                        <button type="button" className="btn btn-xs">
+                        <button type="button" className={"btn btn-xs"}>
                             {index}
                         </button>
                     </a>
                 ))}
             </div>
             <div className="card-body flex flex-col gap-4">
+                <h2 className='font-bold'>{title}</h2>
                 <p>{description}</p>
                 <div className="flex flex-row gap-8 justify-center">
                     <a href={url} target="_blank">
