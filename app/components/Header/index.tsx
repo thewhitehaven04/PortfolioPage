@@ -5,24 +5,11 @@ import type React from "react"
 import type { ComponentProps } from "react"
 import Image from "next/image"
 import Profile from "public/profile.png"
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6"
+import { Contacts } from "app/components/Header/Contacts"
 
 const aboutMe: ComponentProps<typeof AboutMe> = {
     name: "German Bulavkin",
-    jobTitle: "Front-end Engineer",
-    links: (
-        <>
-            <a href="https://github.com/thewhitehaven04">
-                <FaGithub size={32} />
-            </a>
-            <a href="https://www.linkedin.com/in/german-bulavkin-866546340/">
-                <FaLinkedin size={32} />
-            </a>
-            <a href="mailto:thewhitehaven04@gmail.com">
-                <FaEnvelope size={32} />
-            </a>
-        </>
-    ),
+    jobTitle: "Front-End Engineer",
     photo: <Image src={Profile} alt="Profile" height={256} width={256} />,
 }
 
@@ -38,9 +25,12 @@ const achievements: ComponentProps<typeof Achievement>[] = [
 ]
 
 export const Header = () => (
-    <header className="flex flex-col gap-6 mb-3">
+    <header className="flex flex-col gap-6">
         <section>
             <AboutMe {...aboutMe} />
+        </section>
+        <section>
+            <Contacts />
         </section>
         <section className="flex flex-row justify-evenly">
             {achievements.map((achievement) => (

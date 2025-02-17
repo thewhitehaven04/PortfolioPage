@@ -7,7 +7,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { ThemeProvider } from "./components/theme-switch"
 import { metaData } from "./config"
 import { Header } from "app/components/Header"
-import Footer from 'app/components/Footer'
+import Footer from "app/components/Footer"
 
 export const metadata: Metadata = {
     metadataBase: new URL(metaData.baseUrl),
@@ -59,11 +59,11 @@ export default function RootLayout({
                 <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom Feed" />
                 <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
             </head>
-            <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40">
+            <body className="antialiased flex flex-col items-center h-screen bg-light justify-center mx-auto">
                 <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-                    <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[810px] w-full">
+                    <main className="flex-auto min-w-0 flex flex-col px-6 md:py-8 sm:px-4 md:px-0 max-w-[720px] w-full overflow-y-scroll overflow-x-visible scrollbar-none">
                         <Header />
-                        {children}
+                        <section className="flex flex-col gap-4 pt-4">{children}</section>
                         <Footer />
                         <Analytics />
                         <SpeedInsights />
