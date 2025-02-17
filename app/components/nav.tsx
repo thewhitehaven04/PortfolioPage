@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 const navItems = {
     "/about": { name: "About me" },
@@ -7,12 +8,16 @@ const navItems = {
     "/stack": { name: "Stack" },
 }
 
-export function Navbar() {
-    const pathname = window.location.pathname
+export const Navbar = () => {
+    const pathname = usePathname()
     return (
-        <div role="tablist" className="tabs p-2 tabs-boxed">
+        <div role="tablist" className="tabs tabs-lg p-3 tabs-boxed">
             {Object.keys(navItems).map((item) => (
-                <Link key={item} href={item} className={"tab".concat(pathname === item ? " tab-active" : "")}>
+                <Link
+                    key={item}
+                    href={item}
+                    className={"text-lg tab".concat(pathname === item ? " tab-active" : "")}
+                >
                     {navItems[item].name}
                 </Link>
             ))}
