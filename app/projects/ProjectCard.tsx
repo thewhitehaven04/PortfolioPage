@@ -11,8 +11,8 @@ export const ProjectCard = (props: {
     const { images, title, description, url, demoUrl } = props
 
     return (
-        <article className="card border-gray-300 shadow-lg overflow-hidden">
-            <div className="carousel w-full mb-4">
+        <article className="card bg-neutral-700 border-gray-300 shadow-lg overflow-hidden">
+            <div className="carousel w-full mb-2">
                 {images.map((image) => (
                     <Image
                         key={image.src}
@@ -35,11 +35,11 @@ export const ProjectCard = (props: {
                 ))}
             </div>
             <div className="card-body flex flex-col gap-4">
-                <h2 className='font-bold'>{title}</h2>
-                <p>{description}</p>
+                <h2 className="font-bold text-neutral-100">{title}</h2>
+                <p className='text-neutral-100'>{description}</p>
                 <div className="flex flex-row gap-8 justify-center">
                     <a href={url} target="_blank">
-                        <button type="button" className="btn btn-md btn-neutral">
+                        <button type="button" className="btn btn-md">
                             Repository
                         </button>
                     </a>
