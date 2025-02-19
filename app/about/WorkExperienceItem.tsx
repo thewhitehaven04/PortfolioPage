@@ -18,7 +18,7 @@ export const WorkExperienceItem = (props: IWorkExperienceItemProps) => {
                 <div className="bg-yellow-200 w-max px-2 py-1 bg-primary rounded">
                     {from} - {till}
                 </div>
-                <h1 className="text-2xl">{organization}</h1>
+                <h1 className="text-xl font-bold">{organization}</h1>
             </div>
             {description}
         </article>

@@ -21,13 +21,14 @@ export default function Portfolio() {
                         description={project.description}
                         url={project.url}
                         demoUrl={project.demoUrl}
+                        stack={project.stack}
                     />
                 ))}
             </div>
-            <div className="flex flex-row whitespace-pre justify-center">
-                <span>More projects are available on my</span>&nbsp;
+            <div className="flex flex-col items-center mb-2">
+                <span>More projects are available on my GitHub.</span>
                 <Link href="https://github.com/thewhitehaven04" className="link link-neutral" target="_blank">
-                    Github
+                    Learn more 
                 </Link>
             </div>
         </section>
