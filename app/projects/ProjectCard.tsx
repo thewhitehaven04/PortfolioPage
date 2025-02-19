@@ -23,7 +23,7 @@ export const ProjectCard = (props: {
                         height={500}
                         width={1000}
                         id={image.id}
-                        className="carousel-item w-full rounded-lg drop-shadow-md"
+                        className="carousel-item w-full rounded-lg shadow-md"
                     />
                 ))}
             </div>

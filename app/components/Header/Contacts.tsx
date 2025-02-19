@@ -4,7 +4,7 @@ import { FaDownload, FaEnvelope, FaLinkedin, FaTelegram } from "react-icons/fa6"
 
 export const Contacts = () => {
     return (
-        <section className="grid grid-cols-3 grid-rows-2 md:grid-cols-[1fr,_48px,_48px,_48px] md:grid-rows-1 gap-x-4 gap-y-2">
+        <section className="grid grid-cols-3 grid-rows-2 md:grid-cols-[1fr,_48px,_48px,_48px] md:grid-rows-1 gap-x-4 gap-y-2 mb-2">
             <Link
                 href="/CV_Bulavkin.pdf"
                 target="_blank"
