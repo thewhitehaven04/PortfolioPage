@@ -40,7 +40,7 @@ export const ProjectCard = (props: {
                 <h2 className="font-bold">{title}</h2>
                 <p>{description}</p>
                 <h2 className="font-bold">Tech stack</h2>
-                <div className='flex flex-row flex-wrap gap-4 h-8 md:h-16 justify-center mb-2'>
+                <div className='flex flex-row flex-wrap gap-4 justify-center mb-2'>
                     {stack}
                 </div>
                 <div className="flex flex-row gap-8 justify-center drop-shadow-md">

@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    darkMode: "class",
     content: ["./app/**/*.{js,ts,jsx,tsx,mdx}", "./public/**/*.svg"],
     daisyui: {
-        themes: ["bumblebee", "dark"],
+        themes: ["bumblebee", "coffee"],
+        darkTheme: "coffee",
     },
     theme: {
         colors: {

@@ -15,7 +15,7 @@ export const WorkExperienceItem = (props: IWorkExperienceItemProps) => {
         <article className="card flex flex-col gap-2">
             <h2 className="text-xl font-bold">{position}</h2>
             <div className="flex flex-row gap-4 font-medium">
-                <div className="bg-yellow-200 w-max px-2 py-1 bg-primary rounded">
+                <div className="w-max px-2 py-1 bg-primary rounded dark:text-primary-content">
                     {from} - {till}
                 </div>
                 <h1 className="text-xl font-bold">{organization}</h1>

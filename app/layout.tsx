@@ -4,7 +4,6 @@ import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { ThemeProvider } from "./components/theme-switch"
 import { metaData } from "./config"
 import { Header } from "app/components/Header"
 import Footer from "app/components/Footer"
@@ -55,15 +54,13 @@ export default function RootLayout({
                 <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
             </head>
             <body className="antialiased flex flex-col items-center h-screen bg-light justify-center mx-auto">
-                <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-                    <main className="flex-auto min-w-0 flex flex-col py-2 md:py-24 px-2 max-w-[720px] w-full overflow-y-scroll overflow-x-visible scrollbar-none">
-                        <Header />
-                        <section className="flex flex-col gap-4 pt-2">{children}</section>
-                        <Footer />
-                        <Analytics />
-                        <SpeedInsights />
-                    </main>
-                </ThemeProvider>
+                <main className="flex-auto min-w-0 flex flex-col py-2 md:py-24 px-2 max-w-[720px] w-full overflow-y-scroll overflow-x-visible scrollbar-none">
+                    <Header />
+                    <section className="flex flex-col gap-4 pt-2">{children}</section>
+                    <Footer />
+                    <Analytics />
+                    <SpeedInsights />
+                </main>
             </body>
         </html>
     )

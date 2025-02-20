@@ -17,8 +17,8 @@ export const Header = () => (
         <AboutMe {...aboutMe} />
         <section className="flex flex-col pl-[80px]">
             <div className='grid grid-cols-[1px,64px,_1fr]'>
-                <div className='h-8 border-2 border-primary rounded-lg'/>
-                <div className='border-b-4 border-l-4 border-primary w-16 h-8 skew-x-[45deg] translate-x-4 rounded-b-md'/>
+                <div className='h-8 border-2 border-primary rounded-sm'/>
+                <div className='border-b-4 border-l-4 border-primary w-16 h-8 skew-x-[45deg] translate-x-4 rounded-b-sm'/>
                 <div className="border-b-4 w-full border-primary" />
             </div>
             <p className="block font-xl border-4 border-t-0 rounded-b-xl p-4 border-primary">
