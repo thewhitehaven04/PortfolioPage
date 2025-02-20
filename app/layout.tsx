@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     },
     description: metaData.description,
     openGraph: {
-        images: metaData.ogImage,
         title: metaData.title,
         description: metaData.description,
         url: metaData.baseUrl,
@@ -35,10 +34,6 @@ export const metadata: Metadata = {
             "max-image-preview": "large",
             "max-snippet": -1,
         },
-    },
-    twitter: {
-        title: metaData.name,
-        card: "summary_large_image",
     },
     icons: {
         icon: "/favicon.ico",
