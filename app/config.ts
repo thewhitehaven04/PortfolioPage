@@ -2,7 +2,7 @@ export const metaData = {
     baseUrl: "https://portfolio-thewhitehaven04s-projects.vercel.app/",
     title: "German Bulavkin",
     name: "thewhitehaven04",
-    ogImage: null,
+    ogImage: "/opengraph-image.png",
     description:
         "German Bulavkin portfolio page",
 }

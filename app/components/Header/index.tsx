@@ -3,7 +3,7 @@ import { Navbar } from "app/components/Nav"
 import type React from "react"
 import type { ComponentProps } from "react"
 import Image from "next/image"
-import Profile from "public/profile.png"
+import Profile from "public/profile.jpg"
 import { Contacts } from "app/components/Header/Contacts"
 import { Summary } from "app/components/Header/Summary"
 
