@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og"
-import Profile from "public/profile.png"
+import Profile from "public/profile.jpg"
 import Image from "next/image"
 
 export function GET(request: Request) {
