@@ -40,7 +40,6 @@ export default function Page() {
                     <StackCard title="Vite" icon={<SiVite size={36} />} />
                     <StackCard title="Webpack" icon={<SiWebpack size={36} />} />
                     <StackCard title="Testing library" icon={<SiTestinglibrary size={36} />} />
-                    <StackCard title="Node.js" icon={<SiNodedotjs size={36} />} />
                 </div>
             </section>
             <section className="flex flex-col items-center md:items-start gap-2">
