@@ -6,9 +6,11 @@ export const Summary = () => (
             <div className="border-b-4 w-full border-primary" />
         </div>
         <p className="block font-xl border-4 border-t-0 rounded-b-xl p-4 border-primary">
-            Front-end engineer with a vast background in quality assurance, passionate about all things tech and
-            computer hardware, with a lot of experience working with dynamic international teams. I enjoy bringing user
-            interfaces to life, helping build better products. Let's connect!
+            Hello there! I'm a front-end engineer fascinated with inner workings of the web, browsers, JavaScript and
+            library internals. Commited to delivering high-quality web applications. Experienced in international team
+            collaboration and fluent in English, I leverage my extensive quality assurance background to bridge
+            development and testing communication. I use my hobby project, an F1 statistics and telemetry visualization
+            application, to hone my skills in both front-end and back-end development.
         </p>
     </section>
 )
