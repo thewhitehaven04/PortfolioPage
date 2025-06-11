@@ -16,8 +16,8 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
             "With more public data available than ever, I decided to create a tool that would visualize it. " +
             "Many journalists have internal tooling that does similar things, but none of these tools are available to the public. " +
             "This app is meant to remedy that.",
-        url: "https://github.com/thewhitehaven04/f1stats",
-        demoUrl: "https://f1stats-production.up.railway.app/",
+        url: "https://github.com/thewhitehaven04/f1stats_nextjs",
+        demoUrl: "https://f1stats-nextjs.vercel.app/",
         images: [
             { ...f1StatsImg2, id: "f1stats-img1", alt: "F1Stats screenshot 1" },
             { ...f1StatsImg3, id: "f1stats-img2", alt: "F1Stats screenshot 2" },
