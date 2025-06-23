@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 
 export default function Portfolio() {
     return (
-        <section className='flex flex-col gap-4 pt-4'>
+        <section className="flex flex-col gap-4 pt-4">
             <h1 className="text-2xl font-bold tracking-tight">Projects</h1>
-            <div>
+            <div className="flex flex-col gap-8">
                 {projects.map((project) => (
                     <ProjectCard
                         images={project.images}
@@ -28,7 +28,7 @@ export default function Portfolio() {
             <div className="flex flex-col items-center mb-2">
                 <span>More projects are available on my GitHub.</span>
                 <Link href="https://github.com/thewhitehaven04" className="link link-neutral" target="_blank">
-                    Learn more 
+                    Learn more
                 </Link>
             </div>
         </section>
