@@ -5,7 +5,17 @@ import f1StatsImg3 from "public/F1StatsProject/img3.png"
 import f1StatsImg4 from "public/F1StatsProject/img4.png"
 import f1StatsImg5 from "public/F1StatsProject/img5.png"
 import f1StatsImg6 from "public/F1StatsProject/img6.png"
-import { SiChartdotjs, SiDaisyui, SiFastapi, SiNextdotjs, SiPandas, SiPostgresql, SiReact, SiReactrouter, SiShadcnui, SiTailwindcss } from "react-icons/si"
+import {
+    SiChartdotjs,
+    SiCssmodules,
+    SiFastapi,
+    SiNextdotjs,
+    SiPandas,
+    SiPostgresql,
+    SiReact,
+    SiShadcnui,
+    SiTailwindcss,
+} from "react-icons/si"
 import { CaptionedIcon } from "app/components/CaptionedIcon"
 
 export const projects: ComponentProps<typeof ProjectCard>[] = [
@@ -27,7 +37,7 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
         ],
         stack: (
             <>
-                <CaptionedIcon icon={<SiReact size={36}/>} caption="React" />
+                <CaptionedIcon icon={<SiReact size={36} />} caption="React" />
                 <CaptionedIcon icon={<SiNextdotjs size={36} />} caption="Next.js" />
                 <CaptionedIcon icon={<SiShadcnui size={36} />} caption="shadcn/ui" />
                 <CaptionedIcon icon={<SiTailwindcss size={36} />} caption="Tailwind" />
@@ -35,6 +45,19 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
                 <CaptionedIcon icon={<SiFastapi size={36} />} caption="FastAPI" />
                 <CaptionedIcon icon={<SiPandas size={36} />} caption="Pandas" />
                 <CaptionedIcon icon={<SiPostgresql size={36} />} caption="PostgreSQL" />
+            </>
+        ),
+    },
+    {
+        title: "Search palette",
+        description: "A simple, composable, responsive and dependency-free search palette component built with React",
+        url: "https://github.com/thewhitehaven04/command-palette",
+        demoUrl: "https://github.com/thewhitehaven04/command-palette",
+        images: [],
+        stack: (
+            <>
+                <CaptionedIcon icon={<SiReact size={36} />} caption="React" />
+                <CaptionedIcon icon={<SiCssmodules size={36} />} caption="CSS Modules" />
             </>
         ),
     },
