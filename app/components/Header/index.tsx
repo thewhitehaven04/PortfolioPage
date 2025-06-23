@@ -1,11 +1,11 @@
-import { AboutMe } from "app/components/Header/About"
-import { Navbar } from "app/components/Nav"
 import type React from "react"
 import type { ComponentProps } from "react"
 import Image from "next/image"
 import Profile from "public/profile.jpg"
 import { Contacts } from "app/components/Header/Contacts"
 import { Summary } from "app/components/Header/Summary"
+import { AboutMe } from "app/components/Header/About"
+import { Navbar } from "app/components/Nav"
 
 const aboutMe: ComponentProps<typeof AboutMe> = {
     name: "German Bulavkin",

@@ -5,8 +5,8 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { metaData } from "./config"
-import { Header } from "app/components/Header"
-import Footer from "app/components/Footer"
+import Footer from 'app/components/Footer'
+import { Header } from 'app/components/Header'
 
 export const metadata: Metadata = {
     metadataBase: new URL(metaData.baseUrl),
