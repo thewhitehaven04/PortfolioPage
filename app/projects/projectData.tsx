@@ -1,3 +1,4 @@
+import { CaptionedIcon } from "app/components/CaptionedIcon"
 import type { ProjectCard } from "app/projects/ProjectCard"
 import type { ComponentProps } from "react"
 import f1StatsImg2 from "public/F1StatsProject/img2.png"
@@ -16,7 +17,6 @@ import {
     SiShadcnui,
     SiTailwindcss,
 } from "react-icons/si"
-import { CaptionedIcon } from "app/components/CaptionedIcon"
 
 export const projects: ComponentProps<typeof ProjectCard>[] = [
     {
