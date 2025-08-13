@@ -6,14 +6,26 @@ import f1StatsImg3 from "public/F1StatsProject/img3.png"
 import f1StatsImg4 from "public/F1StatsProject/img4.png"
 import f1StatsImg5 from "public/F1StatsProject/img5.png"
 import f1StatsImg6 from "public/F1StatsProject/img6.png"
+import f1StatsNativeBox from "public/F1StatsNative/box.png"
+import f1StatsNativeChart from "public/F1StatsNative/chart.png"
+import f1StatsNativeHero from "public/F1StatsNative/hero.png"
+import f1StatsNativeLapTable from "public/F1StatsNative/lap_table.png"
+import f1StatsNativeResults from "public/F1StatsNative/results.png"
+import f1StatsNativeSeasonMenu from "public/F1StatsNative/season_menu.png"
+import f1StatsNativeTelemetry from "public/F1StatsNative/telemetry.png"
+
 import {
     SiChartdotjs,
     SiCssmodules,
+    SiD3Dotjs,
+    SiExpo,
     SiFastapi,
     SiNextdotjs,
     SiPandas,
     SiPostgresql,
+    SiPrisma,
     SiReact,
+    SiRedux,
     SiShadcnui,
     SiTailwindcss,
 } from "react-icons/si"
@@ -40,6 +52,7 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
                 <CaptionedIcon icon={<SiReact size={36} />} caption="React" />
                 <CaptionedIcon icon={<SiNextdotjs size={36} />} caption="Next.js" />
                 <CaptionedIcon icon={<SiShadcnui size={36} />} caption="shadcn/ui" />
+                <CaptionedIcon icon={<SiPrisma size={36} />} caption="Prisma" />
                 <CaptionedIcon icon={<SiTailwindcss size={36} />} caption="Tailwind" />
                 <CaptionedIcon icon={<SiChartdotjs size={36} />} caption="Chart.js" />
                 <CaptionedIcon icon={<SiFastapi size={36} />} caption="FastAPI" />
@@ -47,6 +60,30 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
                 <CaptionedIcon icon={<SiPostgresql size={36} />} caption="PostgreSQL" />
             </>
         ),
+    },
+    {
+        title: "F1 Stats (mobile app)",   
+        description: "Implementation of the F1Stats built with React Native for iOS",
+        url: "https://github.com/thewhitehaven04/f1stats_mobile",
+        demoUrl: null,
+        images: [
+            {...f1StatsNativeHero, id: "f1stats-native-hero", alt: "Hero screen"},
+            {...f1StatsNativeBox, id: "f1stats-native-box", alt: "Box chart screen"},
+            {...f1StatsNativeChart, id: "f1stats-native-chart", alt: "Scatter chart screen"},
+            {...f1StatsNativeLapTable, id: "f1stats-native-lap-table", alt: "Lap H2H screen"},
+            {...f1StatsNativeResults, id: "f1stats-native-results", alt: "Results screen"},
+            {...f1StatsNativeSeasonMenu, id: "f1stats-native-season-menu", alt: "Event selection screen"},
+            {...f1StatsNativeTelemetry, id: "f1stats-native-telemetry", alt: "Telemetry screen"},
+        ],
+        stack: (
+            <>
+                <CaptionedIcon icon={<SiReact size={36} />} caption="React Native" />
+                <CaptionedIcon icon={<SiD3Dotjs size={36} />} caption="D3.js" />
+                <CaptionedIcon icon={<SiExpo size={36} />} caption="Expo router" />
+                <CaptionedIcon icon={<SiRedux size={36} />} caption="Redux Toolkit" />
+                <CaptionedIcon icon={<SiPrisma size={36} />} caption="Prisma" />
+            </>
+        )
     },
     {
         title: "Search palette",

@@ -10,7 +10,7 @@ import { Navbar } from "app/components/Nav"
 const aboutMe: ComponentProps<typeof AboutMe> = {
     name: "German Bulavkin",
     jobTitle: "Front-End Engineer",
-    photo: <Image src={Profile} alt="Profile" height={256} width={256} />,
+    photo: <Image src={Profile} alt="Profile" height={256} width={256}/>,
 }
 
 export const Header = () => (
