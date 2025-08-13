@@ -41,11 +41,11 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
         url: "https://github.com/thewhitehaven04/f1stats_nextjs",
         demoUrl: "https://f1stats-nextjs.vercel.app/",
         images: [
-            { ...f1StatsImg2, id: "f1stats-img1", alt: "F1Stats screenshot 1" },
-            { ...f1StatsImg3, id: "f1stats-img2", alt: "F1Stats screenshot 2" },
-            { ...f1StatsImg4, id: "f1stats-img3", alt: "F1Stats screenshot 3" },
-            { ...f1StatsImg5, id: "f1stats-img4", alt: "F1Stats screenshot 4" },
-            { ...f1StatsImg6, id: "f1stats-img5", alt: "F1Stats screenshot 5" },
+            { ...f1StatsImg2, id: "f1stats-img1", alt: "F1Stats screenshot 1", height: 836, width: 1923 },
+            { ...f1StatsImg3, id: "f1stats-img2", alt: "F1Stats screenshot 2", height: 836, width: 1923 },
+            { ...f1StatsImg4, id: "f1stats-img3", alt: "F1Stats screenshot 3", height: 836, width: 1923 },
+            { ...f1StatsImg5, id: "f1stats-img4", alt: "F1Stats screenshot 4", height: 836, width: 1923 },
+            { ...f1StatsImg6, id: "f1stats-img5", alt: "F1Stats screenshot 5", height: 836, width: 1923 },
         ],
         stack: (
             <>
@@ -62,18 +62,42 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
         ),
     },
     {
-        title: "F1 Stats (mobile app)",   
+        title: "F1 Stats (mobile app)",
         description: "Implementation of the F1Stats built with React Native for iOS",
         url: "https://github.com/thewhitehaven04/f1stats_mobile",
         demoUrl: null,
         images: [
-            {...f1StatsNativeHero, id: "f1stats-native-hero", alt: "Hero screen"},
-            {...f1StatsNativeBox, id: "f1stats-native-box", alt: "Box chart screen"},
-            {...f1StatsNativeChart, id: "f1stats-native-chart", alt: "Scatter chart screen"},
-            {...f1StatsNativeLapTable, id: "f1stats-native-lap-table", alt: "Lap H2H screen"},
-            {...f1StatsNativeResults, id: "f1stats-native-results", alt: "Results screen"},
-            {...f1StatsNativeSeasonMenu, id: "f1stats-native-season-menu", alt: "Event selection screen"},
-            {...f1StatsNativeTelemetry, id: "f1stats-native-telemetry", alt: "Telemetry screen"},
+            { ...f1StatsNativeHero, id: "f1stats-native-hero", alt: "Hero screen", height: 544, width: 1103 },
+            { ...f1StatsNativeBox, id: "f1stats-native-box", alt: "Box chart screen", height: 544, width: 1103 },
+            {
+                ...f1StatsNativeChart,
+                id: "f1stats-native-chart",
+                alt: "Scatter chart screen",
+                height: 544,
+                width: 1103,
+            },
+            {
+                ...f1StatsNativeLapTable,
+                id: "f1stats-native-lap-table",
+                alt: "Lap H2H screen",
+                height: 544,
+                width: 1103,
+            },
+            { ...f1StatsNativeResults, id: "f1stats-native-results", alt: "Results screen", height: 544, width: 1103 },
+            {
+                ...f1StatsNativeSeasonMenu,
+                id: "f1stats-native-season-menu",
+                alt: "Event selection screen",
+                height: 544,
+                width: 1103,
+            },
+            {
+                ...f1StatsNativeTelemetry,
+                id: "f1stats-native-telemetry",
+                alt: "Telemetry screen",
+                height: 544,
+                width: 1103,
+            },
         ],
         stack: (
             <>
@@ -83,7 +107,7 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
                 <CaptionedIcon icon={<SiRedux size={36} />} caption="Redux Toolkit" />
                 <CaptionedIcon icon={<SiPrisma size={36} />} caption="Prisma" />
             </>
-        )
+        ),
     },
     {
         title: "Search palette",
