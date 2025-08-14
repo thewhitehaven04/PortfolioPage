@@ -1,11 +1,14 @@
 import { CaptionedIcon } from "app/components/CaptionedIcon"
 import type { ProjectCard } from "app/projects/ProjectCard"
 import type { ComponentProps } from "react"
+import f1StatsImg0 from "public/F1StatsProject/img0.png"
+import f1StatsImg1 from "public/F1StatsProject/img1.png"
 import f1StatsImg2 from "public/F1StatsProject/img2.png"
 import f1StatsImg3 from "public/F1StatsProject/img3.png"
 import f1StatsImg4 from "public/F1StatsProject/img4.png"
 import f1StatsImg5 from "public/F1StatsProject/img5.png"
 import f1StatsImg6 from "public/F1StatsProject/img6.png"
+import f1StatsImg7 from "public/F1StatsProject/img7.png"
 import f1StatsNativeBox from "public/F1StatsNative/box.png"
 import f1StatsNativeChart from "public/F1StatsNative/chart.png"
 import f1StatsNativeHero from "public/F1StatsNative/hero.png"
@@ -41,11 +44,14 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
         url: "https://github.com/thewhitehaven04/f1stats_nextjs",
         demoUrl: "https://f1stats-nextjs.vercel.app/",
         images: [
-            { ...f1StatsImg2, id: "f1stats-img1", alt: "F1Stats screenshot 1", height: 836, width: 1923 },
-            { ...f1StatsImg3, id: "f1stats-img2", alt: "F1Stats screenshot 2", height: 836, width: 1923 },
-            { ...f1StatsImg4, id: "f1stats-img3", alt: "F1Stats screenshot 3", height: 836, width: 1923 },
-            { ...f1StatsImg5, id: "f1stats-img4", alt: "F1Stats screenshot 4", height: 836, width: 1923 },
-            { ...f1StatsImg6, id: "f1stats-img5", alt: "F1Stats screenshot 5", height: 836, width: 1923 },
+            { ...f1StatsImg0, id: "f1stats-img8", alt: "F1Stats screenshot 1", height: 1080, width: 1920 },
+            { ...f1StatsImg1, id: "f1stats-img1", alt: "F1Stats screenshot 2", height: 1080, width: 1920 },
+            { ...f1StatsImg2, id: "f1stats-img2", alt: "F1Stats screenshot 3", height: 1080, width: 1920 },
+            { ...f1StatsImg3, id: "f1stats-img3", alt: "F1Stats screenshot 4", height: 1080, width: 1920 },
+            { ...f1StatsImg4, id: "f1stats-img4", alt: "F1Stats screenshot 5", height: 1080, width: 1920 },
+            { ...f1StatsImg5, id: "f1stats-img5", alt: "F1Stats screenshot 6", height: 1080, width: 1920 },
+            { ...f1StatsImg6, id: "f1stats-img6", alt: "F1Stats screenshot 7", height: 1080, width: 1920 },
+            { ...f1StatsImg7, id: "f1stats-img7", alt: "F1Stats screenshot 8", height: 1080, width: 1920 },
         ],
         stack: (
             <>
