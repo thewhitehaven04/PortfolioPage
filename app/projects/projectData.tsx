@@ -19,6 +19,8 @@ import f1StatsNativeTelemetry from "public/F1StatsNative/telemetry.png"
 import Vue1 from "public/VueFormBuilder/Vue1.png"
 import Vue2 from "public/VueFormBuilder/Vue2.png"
 import Vue3 from "public/VueFormBuilder/Vue3.png"
+import Vue4 from "public/VueFormBuilder/Vue4.png"
+import Vue5 from "public/VueFormBuilder/Vue5.png"
 
 import {
     SiChartdotjs,
@@ -126,20 +128,6 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
         description: "Form builder application written in Vue",
         url: "https://github.com/thewhitehaven04/FormBuilderVue",
         demoUrl: "https://thewhitehaven04.github.io/FormBuilderVue/",
-        images: [],
-        stack: (
-            <>
-                <CaptionedIcon icon={<SiVuedotjs size={36} />} caption="Vue" />
-                <CaptionedIcon icon={<SiPrimevue size={36} />} caption="PrimeVue" />
-                <CaptionedIcon icon={<SiSupabase size={36} />} caption="Supabase" />
-            </>
-        ),
-    },
-    {
-        title: "Search palette",
-        description: "A simple, composable, responsive and dependency-free search palette component built with React",
-        url: "https://github.com/thewhitehaven04/command-palette",
-        demoUrl: "https://github.com/thewhitehaven04/command-palette",
         images: [
             {
                 ...Vue1,
@@ -162,7 +150,35 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
                 height: 992,
                 width: 1923,
             },
+            {
+                ...Vue4,
+                id: "submissions-form-builder",
+                alt: "Submissions",
+                height: 992,
+                width: 1923,
+            },
+            {
+                ...Vue5,
+                id: "submit-form-builder",
+                alt: "Submit",
+                height: 992,
+                width: 1923,
+            },
         ],
+        stack: (
+            <>
+                <CaptionedIcon icon={<SiVuedotjs size={36} />} caption="Vue" />
+                <CaptionedIcon icon={<SiPrimevue size={36} />} caption="PrimeVue" />
+                <CaptionedIcon icon={<SiSupabase size={36} />} caption="Supabase" />
+            </>
+        ),
+    },
+    {
+        title: "Search palette",
+        description: "A simple, composable, responsive and dependency-free search palette component built with React",
+        url: "https://github.com/thewhitehaven04/command-palette",
+        demoUrl: "https://github.com/thewhitehaven04/command-palette",
+        images: [],
         stack: (
             <>
                 <CaptionedIcon icon={<SiReact size={36} />} caption="React" />
