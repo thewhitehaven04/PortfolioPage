@@ -26,11 +26,14 @@ import {
     SiNextdotjs,
     SiPandas,
     SiPostgresql,
+    SiPrimevue,
     SiPrisma,
     SiReact,
     SiRedux,
     SiShadcnui,
+    SiSupabase,
     SiTailwindcss,
+    SiVuedotjs,
 } from "react-icons/si"
 
 export const projects: ComponentProps<typeof ProjectCard>[] = [
@@ -112,6 +115,20 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
                 <CaptionedIcon icon={<SiExpo size={36} />} caption="Expo router" />
                 <CaptionedIcon icon={<SiRedux size={36} />} caption="Redux Toolkit" />
                 <CaptionedIcon icon={<SiPrisma size={36} />} caption="Prisma" />
+            </>
+        ),
+    },
+    {
+        title: "Form Builder",
+        description: "Form builder application written in Vue",
+        url: "https://github.com/thewhitehaven04/FormBuilderVue",
+        demoUrl: "https://thewhitehaven04.github.io/FormBuilderVue/",
+        images: [],
+        stack: (
+            <>
+                <CaptionedIcon icon={<SiVuedotjs size={36} />} caption="Vue" />,
+                <CaptionedIcon icon={<SiPrimevue size={36} />} caption="PrimeVue" />
+                <CaptionedIcon icon={<SiSupabase size={36} />} caption="Supabase" />
             </>
         ),
     },
