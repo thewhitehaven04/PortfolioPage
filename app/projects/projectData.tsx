@@ -16,6 +16,9 @@ import f1StatsNativeLapTable from "public/F1StatsNative/lap_table.png"
 import f1StatsNativeResults from "public/F1StatsNative/results.png"
 import f1StatsNativeSeasonMenu from "public/F1StatsNative/season_menu.png"
 import f1StatsNativeTelemetry from "public/F1StatsNative/telemetry.png"
+import Vue1 from "public/VueFormBuilder/Vue1.png"
+import Vue2 from "public/VueFormBuilder/Vue2.png"
+import Vue3 from "public/VueFormBuilder/Vue3.png"
 
 import {
     SiChartdotjs,
@@ -126,7 +129,7 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
         images: [],
         stack: (
             <>
-                <CaptionedIcon icon={<SiVuedotjs size={36} />} caption="Vue" />,
+                <CaptionedIcon icon={<SiVuedotjs size={36} />} caption="Vue" />
                 <CaptionedIcon icon={<SiPrimevue size={36} />} caption="PrimeVue" />
                 <CaptionedIcon icon={<SiSupabase size={36} />} caption="Supabase" />
             </>
@@ -137,7 +140,29 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
         description: "A simple, composable, responsive and dependency-free search palette component built with React",
         url: "https://github.com/thewhitehaven04/command-palette",
         demoUrl: "https://github.com/thewhitehaven04/command-palette",
-        images: [],
+        images: [
+            {
+                ...Vue1,
+                id: "form-builder",
+                alt: "Form editing page",
+                height: 992,
+                width: 1923,
+            },
+            {
+                ...Vue2,
+                id: "sign-in-form-builder",
+                alt: "Sign in form",
+                height: 992,
+                width: 1923,
+            },
+            {
+                ...Vue3,
+                id: "sign-up-form-builder",
+                alt: "Sign up form",
+                height: 992,
+                width: 1923,
+            },
+        ],
         stack: (
             <>
                 <CaptionedIcon icon={<SiReact size={36} />} caption="React" />
