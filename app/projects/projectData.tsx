@@ -21,6 +21,8 @@ import Vue2 from "public/VueFormBuilder/Vue2.png"
 import Vue3 from "public/VueFormBuilder/Vue3.png"
 import Vue4 from "public/VueFormBuilder/Vue4.png"
 import Vue5 from "public/VueFormBuilder/Vue5.png"
+import Vue6 from "public/VueFormBuilder/Vue6.png"
+import Vue7 from "public/VueFormBuilder/Vue7.png"
 
 import {
     SiChartdotjs,
@@ -161,6 +163,20 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
                 ...Vue5,
                 id: "submit-form-builder",
                 alt: "Submit",
+                height: 992,
+                width: 1923,
+            },
+            {
+                ...Vue6,
+                id: "profile-editing-form-builder",
+                alt: "Profile editing",
+                height: 992,
+                width: 1923,
+            },
+            {
+                ...Vue7,
+                id: "profile-editing-dark-form-builder",
+                alt: "Dark mode",
                 height: 992,
                 width: 1923,
             },
