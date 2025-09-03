@@ -23,6 +23,8 @@ import Vue4 from "public/VueFormBuilder/Vue4.png"
 import Vue5 from "public/VueFormBuilder/Vue5.png"
 import Vue6 from "public/VueFormBuilder/Vue6.png"
 import Vue7 from "public/VueFormBuilder/Vue7.png"
+import Vue8 from "public/VueFormBuilder/Vue8.png"
+import Vue9 from "public/VueFormBuilder/Vue9.png"
 
 import {
     SiChartdotjs,
@@ -177,6 +179,20 @@ export const projects: ComponentProps<typeof ProjectCard>[] = [
                 ...Vue7,
                 id: "profile-editing-dark-form-builder",
                 alt: "Dark mode",
+                height: 992,
+                width: 1923,
+            },
+            {
+                ...Vue8,
+                id: "profile-editing-single-choice-form-builder",
+                alt: "Single choice answer breakdown",
+                height: 992,
+                width: 1923,
+            },
+            {
+                ...Vue9,
+                id: "profile-editing-multiple-choice-form-builder",
+                alt: "Multiple choice answer breakdown",
                 height: 992,
                 width: 1923,
             },
