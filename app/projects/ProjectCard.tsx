@@ -15,7 +15,7 @@ export const ProjectCard = (props: {
     return (
         <article className="card bg-base-50 border-gray-300 overflow-hidden max-w-full flex flex-col items-center">
             <div className="carousel w-full mb-2">
-                {images.map((image) => (
+                {images.map((image, index) => (
                     <Image
                         key={image.src}
                         alt={image.alt}
@@ -23,7 +23,9 @@ export const ProjectCard = (props: {
                         height={image.height}
                         width={image.width}
                         id={image.id}
+                        priority={index === 0}
                         className="carousel-item object-contain max-w-full max-h-[600px] aspect-auto rounded-lg"
+                        sizes='(max-width: 1920px) 800px, 1000px'
                     />
                 ))}
             </div>
