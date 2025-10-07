@@ -9,9 +9,12 @@ export const workExperienceItems: IWorkExperienceItemProps[] = [
         organization: "Stenn International",
         description: (
             <ul>
-                <li>Development of UI simplifying compliance and fraud-related business flows</li>
-                <li>Migrated the product's team features to the internal design system UI kit</li>
-                <li>Helped maintain the internal UI kit library</li>
+                <li>
+                    Developed interfaces for compliance- and fraud analysis and automated information requests to
+                    clients as a part of inter-team collaborative work that reduced decision time from 2 days to 3 hours
+                </li>
+                <li>Migrated UI to internal design kit, improving brand consistency and reducing development time</li>
+                <li>Introduced unit- and component-level tests that accelerated the release cycle.</li>
             </ul>
         ),
     },
@@ -22,8 +25,12 @@ export const workExperienceItems: IWorkExperienceItemProps[] = [
         organization: "Stenn International",
         description: (
             <ul>
-                <li>Conducted Ul and API automated testing with Pytest</li>
-                <li>Optimised product team testing practices and coverage</li>
+                <li>
+                    Developed mocks to simulate external integrations, reducing production defects from edge-case
+                    scenarios
+                </li>
+                <li>Automated UI and API tests, shortening release cycle by 60–70%</li>
+                <li>Created standardized integration testing guidelines, saving other teams’ time</li>
             </ul>
         ),
     },
@@ -34,18 +41,34 @@ export const workExperienceItems: IWorkExperienceItemProps[] = [
         organization: "IBS Appline",
         description: (
             <ul>
-                <li>Performed UI and API testing of web- and SAP-based applications</li>
-                <li>Refined testing policies, procedures and scripts</li>
+                <li>
+                    Automated testing processes, accelerating release cycles and enabling faster delivery of new
+                    features
+                </li>
+                <li>
+                    Developed test plan for integrating a bank with a new retail accounting system, ensuring smooth
+                    deployment
+                </li>
+                <li>
+                    Mentored junior testers and contributed to integrated product teams, improving overall team
+                    efficiency
+                </li>
             </ul>
         ),
     },
-{
+    {
         position: "QA Engineer",
         from: "July 2019",
         till: "February 2020",
         organization: "Bytex LLC",
-        description: null,
-    }
+        description: (
+            <ul>
+                <li>Logged numerous defect reports, which improved product quality</li>
+                <li>Learned functional and non-functional testing principles</li>{" "}
+                <li>Gained knowledge of software development lifecycle and QA documentation</li>
+            </ul>
+        ),
+    },
 ]
 
 export const educationItems: IEducationItemProps[] = [
