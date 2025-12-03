@@ -8,7 +8,7 @@ export const workExperienceItems: IWorkExperienceItemProps[] = [
         till: "December 2024",
         organization: "Stenn International",
         description: (
-            <ul>
+            <ul className='list-disc'>
                 <li>
                     Developed interfaces for compliance- and fraud analysis and automated information requests to
                     clients as a part of inter-team collaborative work that reduced decision time from 2 days to 3 hours
@@ -24,7 +24,7 @@ export const workExperienceItems: IWorkExperienceItemProps[] = [
         till: "February 2024",
         organization: "Stenn International",
         description: (
-            <ul>
+            <ul className='list-disc'>
                 <li>
                     Developed mocks to simulate external integrations, reducing production defects from edge-case
                     scenarios
@@ -40,7 +40,7 @@ export const workExperienceItems: IWorkExperienceItemProps[] = [
         till: "October 2022",
         organization: "IBS Appline",
         description: (
-            <ul>
+            <ul className='list-disc'>
                 <li>
                     Automated testing processes, accelerating release cycles and enabling faster delivery of new
                     features
@@ -62,7 +62,7 @@ export const workExperienceItems: IWorkExperienceItemProps[] = [
         till: "February 2020",
         organization: "Bytex LLC",
         description: (
-            <ul>
+            <ul className="list-disc">
                 <li>Logged numerous defect reports, which improved product quality</li>
                 <li>Learned functional and non-functional testing principles</li>{" "}
                 <li>Gained knowledge of software development lifecycle and QA documentation</li>
